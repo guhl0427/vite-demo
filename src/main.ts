@@ -2,9 +2,8 @@ import './style.css'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
-console.log(import.meta.env);
-console.log(import.meta.env.VITE_APP_TITLE);
-
+console.log(import.meta.env)
+console.log(import.meta.env.VITE_APP_TITLE)
 
 app.innerHTML = `
   <h1>Hello Vite!</h1>
