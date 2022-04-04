@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import './style.css'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
