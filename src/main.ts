@@ -1,8 +1,9 @@
 /* eslint-disable no-console */
-import './style.css'
+import '~/style.css'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
+console.log(import.meta.url)
 console.log(import.meta.env)
 console.log(import.meta.env.VITE_APP_TITLE)
 
