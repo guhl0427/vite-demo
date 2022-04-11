@@ -7,8 +7,7 @@ const light = ref([
 ])
 </script>
 <template>
-  <h1>123123</h1>
-  div
+  <h1>hello vue</h1>
   <div class="traffic-lights">
     <div class="light-cursor light light-color-red" />
     <div class="light light-color-yellow" />
