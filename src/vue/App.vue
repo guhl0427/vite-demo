@@ -8,8 +8,8 @@ const light = ref([
 </script>
 <template>
   <h1>hello vue</h1>
-  <div class="traffic-lights">
-    <div class="light-cursor light light-color-red" />
+  <div id="light" class="traffic-lights">
+    <div class="light light-color-red" />
     <div class="light light-color-yellow" />
     <div class="light light-color-green" />
   </div>

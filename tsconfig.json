@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    // "jsx": "preserve",
+    "jsx": "preserve",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -9,6 +9,7 @@
       "ESNext",
       "DOM"
     ],
+    "allowJs": true,
     "moduleResolution": "Node",
     "strict": true,
     "sourceMap": true,
@@ -31,7 +32,7 @@
   "exclude": [
     "node_modules",
     "dist",
-    "src/react",
+    // "src/react",
     // "src/vue"
   ]
 }
