@@ -12,8 +12,6 @@ export const Light = (props: Props) => {
 
   useEffect(() => {
     let timerId: number | undefined = -1
-    // console.log(on)
-    // console.log(props.duration)
     if (props.on) {
       timerId = setTimeout(() => {
         props.toggleLight()
