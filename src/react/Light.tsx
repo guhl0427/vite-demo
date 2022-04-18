@@ -11,7 +11,7 @@ export const Light = (props: Props) => {
   // const [color, setColor] = useState(props.color)
 
   useEffect(() => {
-    let timerId = -1
+    let timerId: number | undefined = -1
     // console.log(on)
     // console.log(props.duration)
     if (props.on) {
