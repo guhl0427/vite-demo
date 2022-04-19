@@ -16,5 +16,4 @@ const light = ref([
 </template>
 <style>
 /* @import '~/style.css'; */
-/* css */
 </style>
