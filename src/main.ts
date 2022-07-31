@@ -1,23 +1,6 @@
-/* eslint-disable no-console */
-import '~/style.css'
+import { createApp } from 'vue'
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+import App from './App.vue'
 
-console.log(import.meta.url)
-console.log(import.meta.env)
-console.log(import.meta.env.VITE_APP_TITLE)
-
-export function render() {
-  app.innerHTML = `
-    <h1>Hello Vite!</h1>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-  `
-}
-
-render()
-
-if (import.meta.hot) {
-  import.meta.hot.accept((newModule) => {
-    newModule.render()
-  })
-}
+const app = createApp(App)
+app.mount('#app')

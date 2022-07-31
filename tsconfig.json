@@ -3,7 +3,6 @@
     "baseUrl": ".",
     "jsx": "preserve",
     "target": "ESNext",
-    "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": [
       "ESNext",
