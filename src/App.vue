@@ -1,17 +1,47 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-const light = ref([
-  { color: 'red', on: true },
-  { color: 'yellow', on: false },
-  { color: 'green', on: true },
-])
+import { RouterLink, RouterView } from 'vue-router'
+
+// import { storeToRefs } from 'pinia'
+// import { userMainStore } from './stores/main'
+
+// const { name, doubleCount, doubleCountPlus, getUserById, userCounter, count } = storeToRefs(userMainStore())
+
+// const { addCount, addCountAsync } = userMainStore()
 </script>
 
 <template>
-  <h1>hello vue</h1>
-  <template v-for="item in light">
-    <div class="red" v-if="item.on">{{ item.color }}</div>
-  </template>
+  <header>
+    <div class="wrapper">
+      <!-- <h1>{{ name }} - {{ doubleCount }} - {{ doubleCountPlus }}</h1>
+      <h1>{{ getUserById(3) }}</h1>
+      <h1>{{ userCounter }}</h1>
+      <div>
+        <p>{{ count }}</p>
+        <button @click="addCount(3)">
+          +3
+        </button>
+        <button @click="addCountAsync(3)">
+          +3Async
+        </button>
+      </div> -->
+      <nav>
+        <RouterLink to="/">
+          Home
+        </RouterLink>
+        <RouterLink to="/about">
+          About
+        </RouterLink>
+        <RouterLink to="/A">
+          A组件
+        </RouterLink>
+        <RouterLink to="/B">
+          B组件
+        </RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
 </template>
 
 <style lang="less">
@@ -21,11 +51,6 @@ const light = ref([
   margin: 0;
   padding: 0;
 }
-
-h1 {
-  color: red;
-}
-
 .red {
   width: 100px;
   color: aquamarine;
