@@ -1,4 +1,4 @@
-import { expect, test } from 'vitest'
+import { expect, it, test } from 'vitest'
 import { add } from '../src/composables/Add'
 import A from '../src/views/A.vue'
 
@@ -11,5 +11,9 @@ test('add', () => {
 })
 
 test('vue', () => {
-  console.log(A.template)
+  console.log(A)
+})
+
+it('hello world', () => {
+  expect(1 + 1).toBe(2)
 })
