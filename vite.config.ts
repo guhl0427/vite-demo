@@ -13,4 +13,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
   },
+  // optimizeDeps: {
+  //   exclude: ['lodash-es'],
+  // },
 })
